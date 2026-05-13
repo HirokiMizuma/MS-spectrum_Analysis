@@ -86,7 +86,7 @@ if df is not None:
     with col2:
         # 初期調整用グラフ
         fig_ui, ax_ui = plt.subplots(figsize=(10, 5))
-        ax_ui.plot(mz_view, int_view, color='black', alpha=0.6, linewidth=0.8, label="Raw Data")
+        ax_ui.plot(mz_view, int_view, color='black', alpha=0.6, linewidth=0.8, label="Line")
         # オフセットライン
         offset_val = max_int * (offset_pct / 100)
         ax_ui.axhline(offset_val, color='red', linestyle='--', alpha=0.7, label=f"Offset ({offset_pct}%)")
