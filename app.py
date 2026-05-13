@@ -76,9 +76,9 @@ if df is not None:
     col1, col2 = st.columns([1, 3])
     
     with col1:
-        st.write("スライダーを動かして、生データの各ピークにラインが合うように調整してください。")
+        st.write("オフセットを設定し、ベースラインを作成してください。また、生データの各ピークにラインが合うようにポリマーの分子量を調整してください。")
         offset_pct = st.slider("オフセット (%)", 0.0, 15.0, 1.0, 0.1)
-        init_poly_mass = st.slider("ポリマー質量 (Da) 推定値", 4500.0, 6500.0, 5300.0, 1.0)
+        init_poly_mass = st.slider("ポリマーの分子量 (Da) ", 4500.0, 6500.0, 5300.0, 1.0)
         
         st.warning("調整後に下の『フィッティング解析』を押してください。")
         run_fit = st.button("フィッティング解析", use_container_width=True, type="primary")
