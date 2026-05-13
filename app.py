@@ -76,7 +76,7 @@ if df is not None:
     col1, col2 = st.columns([1, 3])
     
     with col1:
-        st.write("スライダーを動かして、生データのピークにラインを合わせてください。")
+        st.write("スライダーを動かして、生データの各ピークにラインが合うように調整してください。")
         offset_pct = st.slider("オフセット (%)", 0.0, 15.0, 1.0, 0.1)
         init_poly_mass = st.slider("ポリマー質量 (Da) 推定値", 4500.0, 6500.0, 5300.0, 1.0)
         
